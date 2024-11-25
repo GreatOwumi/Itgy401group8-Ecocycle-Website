@@ -1,0 +1,193 @@
+/* General Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://sl.bing.net/f8mgbVQzrJk') no-repeat center center;
+    background-size: cover;
+  }
+
+  .signup-container {
+    width: 100%;
+    max-width: 500px; /* Reduced the size of the box */
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header Section */
+  .signup-header h1 {
+    font-size: 18px;
+    font: Poppins;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px; /* Added extra space above heading */
+  }
+
+  /* Auth Buttons */
+  .auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 8px 15px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+  }
+
+  .auth-button.apple img,
+  .auth-button.google img {
+    width: 16px;
+    margin-right: 8px;
+  }
+
+  /* Divider Line with "OR" */
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #CCCCCC;
+    margin: 0 10px;
+  }
+
+  /* Form Section */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+
+  label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 11px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #000000;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #439343;
+    outline: none;
+  }
+
+  /* Adjusting Form Row */
+  .form-row {
+    display: flex;
+    gap: 40px; /* Added extra space between first and last name fields */
+  }
+
+  .form-row div {
+    flex: 1;
+  }
+
+  .form-row input {
+    width: calc(100% - 10px); /* Ensures fields remain compact */
+  }
+
+  /* Checkbox Section */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Submit Button */
+  .submit-button {
+    width: 25%; /* Reduced button width */
+    padding: 8px;
+    margin: 0 autO; /* Center align button */
+    background-color: #439343;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #439343;
+  }
+
+  /* Login Link */
+  .login-link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .login-link a {
+    color: #439343;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  /* Logo container styling */
+.logo-container {
+position: absolute; /* Allows positioning at the very top-left */
+top: 20px; /* Adjust spacing from the top of the page */
+left: 20px; /* Adjust spacing from the left of the page */
+}
+
+/* Logo image styling */
+.logo {
+width: 120px; /* Adjust logo width as needed */
+height: auto; /* Keep aspect ratio */
+display: block; /* Ensure it behaves like a block element */
+}
