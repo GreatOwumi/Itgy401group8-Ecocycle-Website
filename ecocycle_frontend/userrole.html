@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCycle User Roles</title>
+    <link rel="stylesheet" href="userrole.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+        </div>
+
+        <!-- Form Title -->
+         <div class="user-role">    
+
+        <!-- Role Selection -->
+        <form action="submit.php" method="POST">
+            <div class="join">
+                <h2>Join as user, admin or business</h2>
+            </div>
+            <div class="role-selection-form">
+                <div class="role-card">
+                    <input type="radio" id="admin" name="role" value="admin">
+                    <label for="admin">
+                        <img src="../ecocycle_frontend/images/admin.png" alt="Admin Icon">
+                        <p>I am looking for work as an admin.</p>
+                    </label>
+                </div>
+    
+                <div class="role-card">
+                    <input type="radio" id="user" name="role" value="user" checked>
+                    <label for="user">
+                        <img src="../ecocycle_frontend/images/user.png" alt="User Icon">
+                        <p>I want to register as a user.</p>
+                    </label>
+                </div>
+    
+                <div class="role-card">
+                    <input type="radio" id="business" name="role" value="business">
+                    <label for="business">
+                        <img src="../ecocycle_frontend/images/building.png" alt="Business Icon">
+                        <p>We want to register our business.</p>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <!-- Submit Button -->
+                <button type="submit" class="create-account-btn">Create Account</button>
+            </div>
+        </form>
+         
+
+        <!-- Login Link -->
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+    </div>
+</body>
+</html>
