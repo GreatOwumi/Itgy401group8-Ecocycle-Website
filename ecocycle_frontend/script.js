@@ -1,0 +1,1 @@
+//create a variable to collect data from the html such as: const screen = getelement by id('screen');

@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://sl.bing.net/f8mgbVQzrJk') no-repeat center center;
+    background: url('../../ecocycle_frontend/images/user-role-background-image.png') no-repeat center center; /* Background image */
     background-size: cover;
   }
 
@@ -178,16 +178,26 @@ body {
   .login-link a:hover {
     text-decoration: underline;
   }
-  /* Logo container styling */
-.logo-container {
-position: absolute; /* Allows positioning at the very top-left */
-top: 20px; /* Adjust spacing from the top of the page */
-left: 20px; /* Adjust spacing from the left of the page */
-}
 
+ /* Logo container styling */
+ .logo-container {
+  position: absolute; /* Allows positioning at the very top-left */
+  top: 60px; /* Adjust spacing from the top of the page */
+  left: 500px; /* Adjust spacing from the left of the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
 /* Logo image styling */
 .logo {
-width: 120px; /* Adjust logo width as needed */
-height: auto; /* Keep aspect ratio */
-display: block; /* Ensure it behaves like a block element */
+position: absolute;
+width: 424px;
+height: 199.65px;
+right: 230%;
+top: 1%;
+
+background: url(../../ecocycle_frontend/images/logo6.png);
+
 }
