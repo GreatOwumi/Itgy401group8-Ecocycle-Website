@@ -50,7 +50,7 @@ body {
 /* Form Title */
 .join h2 {
     position: inherit; /* Allow top property to work */
-    margin-top: 15%; /* Pushes the title down from the container's top */
+    margin-top: 35%; /* Pushes the title down from the container's top */
     top: 60%; /* Additional fine-tuning of its position relative to surrounding content */
     font-size: 24px; /* Adjust size if necessary */
     color: #333; /* Title color */
@@ -78,8 +78,8 @@ body {
     background: rgba(255, 255, 255, 0.9); /* Light white background with transparency */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
-    height: 60vh;
-    width: 60vw;
+    height: 50vh;
+    width: 50vw;
     text-align: center;
     display: flex; /* Enable Flexbox */
     flex-direction: column;

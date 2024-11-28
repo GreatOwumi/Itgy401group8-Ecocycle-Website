@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1 class="logo">ECOCYCLE</h1>
+            <nav>
+                <h3>GENERAL</h3>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Centers</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#" class="active">Notifications</a></li>
+                </ul>
+                <h3>FINANCES</h3>
+                <ul>
+                    <li><a href="#">Withdrawal</a></li>
+                    <li><a href="#">Analytics</a></li>
+                </ul>
+                <h3>SETTINGS</h3>
+                <ul>
+                    <li><a href="#">My profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main>
+            <header>
+                <h5>General > Notifications</h5>
+                <input type="search" placeholder="Search">
+            </header>
+
+            <section class="notification-detail">
+                <h2>November quality update</h2>
+                <p>From admin.</p>
+                <p>
+                    Good day our dear user, we want to inform you that a software update
+                    will be taking place @ 4:30pm (UTC +1:00) West Africa time.
+                </p>
+                <p>
+                    A server downtime will likely occur due to reallocation of resources.
+                    Thank you for your understanding.
+                </p>
+                <p>- Ecocycle team</p>
+            </section>
+        </main>
+
+        <!-- Notification list -->
+        <section class="notification-list">
+            <div class="filters">
+                <button class="filter active">Unread</button>
+                <button class="filter">All</button>
+            </div>
+            <div class="notification-item active">
+                <p>Software quality update</p>
+                <span>3 hours ago</span>
+            </div>
+            <div class="notification-item">
+                <p>Withdrawal status</p>
+                <span>3 hours ago</span>
+            </div>
+            <div class="notification-item">
+                <p>Gmail verification</p>
+                <span>3 hours ago</span>
+            </div>
+            <div class="notification-item">
+                <p>Welcome message</p>
+                <span>3 hours ago</span>
+            </div>
+            <div class="notification-item">
+                <p>Profile updated</p>
+                <span>3 hours ago</span>
+            </div>
+            <div class="notification-item">
+                <p>Please verify your account</p>
+                <span>3 hours ago</span>
+            </div>
+        </section>
+    </div>
+    <script src="notification.js"></script>
+</body>
+</html>
