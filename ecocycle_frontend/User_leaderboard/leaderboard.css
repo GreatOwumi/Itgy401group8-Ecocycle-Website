@@ -1,0 +1,128 @@
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      width: 250px;
+      background-color: #2E7D32;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .menu-section {
+      margin-bottom: 30px;
+    }
+
+    .menu-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #b5e7a0;
+    }
+
+    .menu {
+      flex-grow: 1;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .menu-item i {
+      margin-right: 10px;
+    }
+
+    .menu-item:hover,
+    .menu-item.active {
+      background-color: #1B5E20;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .timer p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .timer span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .current-rank {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Leaderboard Styles */
+    .leaderboard {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .leaderboard-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .leaderboard-table tbody tr:hover {
+      background: #f1f1f1;
+    }
+  
