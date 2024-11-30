@@ -1,0 +1,71 @@
+/* General styles */
+body {
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #d5fdd7, #f2fff2);
+  }
+  
+  .container {
+    width: 550px;
+    background: #ffffff;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .logo {
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styles */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+    color: #555;
+  }
+  .input-group input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+  
+  /* Button styles */
+  .btn {
+    display: inline-flexbox;
+    background: #439343;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    font-size: 0.7em;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #439343;
+  }
+  
