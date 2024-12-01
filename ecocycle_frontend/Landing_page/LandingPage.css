@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: none;
+  overflow-y: scroll;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url("../FRONTEND/LandingPictures/Background 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-container {
+  background-color: #e6f6e6;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 12px 30px;
+}
+
+.nav-content {
+  padding: 16px 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links > .nav-link-item {
+  display: inline-block;
+  position: relative;
+  margin: 0 24px;
+}
+
+.nav-links > .nav-link-item > a {
+  text-decoration: none;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+.nav-links > .nav-link-item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2.3px;
+  background-color: #4f984f;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links > .nav-link-item > a:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  display: inline-block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background: #4f984f;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*
+  align-items: center; */
+  /* background: #fafafa; */
+  padding: 40px;
+}
+
+.image-1,
+.image-3 {
+  width: 80px;
+}
+.image-2 {
+  width: 120px;
+}
+
+.main-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-video > img {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 900px;
+  height: 600px;
+}
+
+/* section 1 begins */
+
+.section-1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a914a;
+  text-align: left;
+  padding: 50px 40px;
+}
+
+.sec1-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  gap: 3rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+
+.part-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eco-voice {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.part-1 > .eco-voice h4 {
+  color: #4f984f;
+  font-weight: 400;
+}
+
+.part-1 > .eco-voice p {
+  color: #000000;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  width: 400px;
+}
+
+.part-1 > .eco-defined {
+  display: flex;
+  padding-top: 20px;
+  width: 600px;
+}
+
+.part-1 > .eco-defined p {
+  font-size: 1.2rem;
+}
+
+.part-2 {
+  display: flex;
+  gap: 3rem;
+}
+
+.part-2 > .eco-goal {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4f984f;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 1rem;
+  width: 27%;
+}
+.eco-goal img {
+  width: 60px;
+}
+
+.eco-goal p {
+  font-size: 1.1rem;
+}
+
+.eco-goal button {
+  background: #4f984f;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 1rem;
+}
+
+.eco-goal a {
+  color: #ffffff;
+}
+
+/* section 2 begins here */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  padding: 70px 40px;
+  gap: 3rem;
+}
+
+.sec2-part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-explained {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.3;
+}
+
+.work-explained h4,
+p {
+  font-weight: 500;
+}
+
+.work-explained p {
+  color: #000000;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  width: 600px;
+}
+
+.sec2-part1 button {
+  background: #2c592c;
+  padding: 13px 17px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.sec2-part1 button a {
+  display: flex;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.sec2-part2 {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.sec2-part2 > .personnel {
+  display: flex;
+  flex-direction: column;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 30%;
+  gap: 1.2rem;
+}
+
+.personnel .value1 {
+  width: 18px;
+}
+
+.personnel img {
+  width: 30px;
+}
+
+.personnel h5 {
+  color: #4a914a;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.personnel p {
+  font-size: 1.1rem;
+  color: #4a914a;
+  width: 300px;
+}
+
+.eco-goal button {
+  background: #4f984f;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 1rem;
+}
+
+.eco-goal a {
+  color: #ffffff;
+}
+
+/* section 3 begins here */
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  background-image: url("../FRONTEND/LandingPictures/bottle background fourth page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding: 40px 50px;
+  gap: 2rem;
+}
+
+.section-3 > .mission {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mission > h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mission > .first {
+  font-weight: 400;
+  font-size: 2rem;
+  width: 290px;
+}
+
+.mission > .second {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 470px;
+}
+
+.the-plans {
+  display: flex;
+  gap: 3rem;
+}
+
+.the-plans > .plan {
+  display: flex;
+  flex-direction: column;
+  background: url("../FRONTEND/LandingPictures/gradient-bg.png");
+  border: none;
+  border-radius: 30px;
+  padding: 50px 50px;
+  gap: 1rem;
+}
+
+.the-plans h5 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.the-plans p {
+  font-weight: 400;
+  width: 260px;
+}
+
+.write-up p {
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 680px;
+}
+
+/* section-4 begins here */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 50px 40px;
+  gap: 3.5rem;
+}
+
+.join-in {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  /* gap: 3rem; */
+  background-color: #2a522a;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+
+.get-started,
+.try-me {
+  width: 50%;
+}
+
+.get-started {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  height: 60px;
+}
+
+.join-in h5 {
+  text-transform: uppercase;
+  color: #97e282;
+}
+
+.join-in p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  width: 200px;
+}
+
+.join-in button {
+  width: 30%;
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.join-in .start {
+  background: #97e282;
+  border: none;
+}
+
+.join {
+  border: 1px solid #97e282;
+  background: #2a522a;
+}
+
+.join a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.join img {
+  width: 22px;
+}
+
+.join-in a {
+  color: #ffffff;
+}
+
+.frq-questions {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  background-color: #f0ecec;
+  border-radius: 20px;
+  padding: 60px 40px;
+  gap: 2rem;
+}
+
+.frq-questions h3 {
+  position: absolute;
+  top: 0;
+  left: 270px;
+  font-size: 2.7rem;
+  width: 400px;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.section-content .chat-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat-icon {
+  position: relative;
+}
+
+.chat-icon .bubble {
+  position: absolute;
+  width: 70px;
+  top: 12px;
+}
+
+.chat-icon .bent-arrow {
+  position: absolute;
+  width: 120px;
+  left: 60px;
+  top: -30px;
+}
+
+.section-content .app-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 40px;
+}
+
+.app-questions .asked-question {
+  background: #4a914a;
+}
