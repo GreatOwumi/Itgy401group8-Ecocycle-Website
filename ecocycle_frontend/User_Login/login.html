@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <div class="logo">
+            <h1>ECOCYCLE</h1>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-box">
+            <h2>Log in to your account.</h2>
+
+            <!-- Social Buttons -->
+            <div class="social-login">
+                <button class="social-btn apple-btn">
+                    <span> Continue with Apple</span>
+                </button>
+                <button class="social-btn google-btn">
+                    <span>Continue with Google</span>
+                </button>
+            </div>
+
+            <!-- Input Fields -->
+            <form>
+                <div class="form-group">
+                    <label for="email">Email/User ID</label>
+                    <input type="text" id="email" placeholder="Email/User ID">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" placeholder="Password (8 or more characters)">
+                        <button type="button" class="password-toggle">👁️</button>
+                    </div>
+                </div>
+
+                <!-- Sign In Button -->
+                <button type="submit" class="sign-in-btn">Sign in</button>
+            </form>
+
+            <!-- Forgot Password -->
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>
