@@ -21,6 +21,7 @@ header {
   background-image: url("./LandingPictures/Background 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .nav-container {
@@ -84,7 +85,7 @@ header {
 }
 
 .main-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   /*
@@ -102,6 +103,9 @@ header {
 }
 .title-text h1 span{
   font-weight: 600;
+}
+.title-p{
+  width: 50vw;
 }
 
 .content-btn{
@@ -161,7 +165,7 @@ header {
 }
 
 .main-content{
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -172,11 +176,15 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  width: 10vw;
+  position: relative;
+  left: 30vw;
+  top: 10vh;
 }
 
 .main-video > img {
-  width: 600px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
 }
 
 /* section 1 begins */
