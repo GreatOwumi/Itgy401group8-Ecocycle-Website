@@ -14,12 +14,14 @@ body {
   overflow-x: none;
   overflow-y: scroll;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
-  background-image: url("../FRONTEND/LandingPictures/Background 1.jpg");
+  background-image: url("./LandingPictures/Background 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .nav-container {
@@ -83,7 +85,7 @@ header {
 }
 
 .main-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   /*
@@ -92,12 +94,81 @@ header {
   padding: 40px;
 }
 
+.title-text{
+  font-size: 2rem;
+  width: 50vw;
+}
+.title-text h1{
+  font-weight: 400;
+}
+.title-text h1 span{
+  font-weight: 600;
+}
+.title-p{
+  width: 50vw;
+}
+
+.content-btn{
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #4F984F;
+  color: #ffffff;
+}
+
+.hashtags ul{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.highlight{
+  color: #4f984f;
+}
+
+.team p{
+  font-size: 1.2rem;
+}
+
+.view-more{
+  width: 170px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-size: .8rem;
+  font-weight: 300;
+  background-color: #4F984F;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.view-more img{
+  width: 20px;
+  height: 20px;
+}
+
 .image-1,
 .image-3 {
-  width: 80px;
+  width: 100px;
 }
 .image-2 {
-  width: 120px;
+  width: 180px;
+}
+
+.main-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .main-video {
@@ -105,13 +176,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  width: 10vw;
+  position: relative;
+  left: 30vw;
+  top: 10vh;
 }
 
 .main-video > img {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  width: 900px;
+  width: 800px;
   height: 600px;
 }
 
@@ -125,6 +197,7 @@ header {
   background-color: #4a914a;
   text-align: left;
   padding: 50px 40px;
+  z-index: 0;
 }
 
 .sec1-content {
@@ -186,7 +259,7 @@ header {
   border-radius: 20px;
   padding: 20px;
   gap: 1rem;
-  width: 27%;
+  width: 50%;
 }
 .eco-goal img {
   width: 60px;
@@ -217,6 +290,7 @@ header {
   text-align: left;
   padding: 70px 40px;
   gap: 3rem;
+  z-index: 1;
 }
 
 .sec2-part1 {
@@ -315,8 +389,8 @@ p {
   color: #ffffff;
   align-items: center;
   text-align: center;
-  background-image: url("../FRONTEND/LandingPictures/bottle background fourth page.png");
-  background-size: cover;
+  background-image: url("./LandingPictures/bottle background fourth page.png");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 700px;
@@ -331,21 +405,28 @@ p {
   gap: 1rem;
 }
 
+.section-3 > .write-up > p{
+  font-size: 1.0rem;
+  text-align: left;
+}
+
 .mission > h4 {
   text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .mission > .first {
-  font-weight: 400;
-  font-size: 2rem;
-  width: 290px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.3rem;
+  width: 360px;
+  line-height: 90%;
 }
 
 .mission > .second {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: .8rem;
+  font-weight: 200;
   width: 470px;
 }
 
@@ -357,20 +438,21 @@ p {
 .the-plans > .plan {
   display: flex;
   flex-direction: column;
-  background: url("../FRONTEND/LandingPictures/gradient-bg.png");
+  background: url("./LandingPictures/gradient-bg.png");
   border: none;
   border-radius: 30px;
-  padding: 50px 50px;
+  padding: 40px;
   gap: 1rem;
 }
 
 .the-plans h5 {
-  font-size: 2.3rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 90%;
 }
 
 .the-plans p {
-  font-weight: 400;
+  font-weight: 300;
   width: 260px;
 }
 
@@ -428,7 +510,7 @@ p {
 }
 
 .join-in button {
-  width: 30%;
+  width: 40%;
   padding: 10px 16px;
   border-radius: 15px;
   font-size: 1rem;
@@ -467,6 +549,7 @@ p {
   align-items: center;
   position: relative;
   width: 90%;
+  height: 80vh;
   background-color: #f0ecec;
   border-radius: 20px;
   padding: 60px 40px;
@@ -475,22 +558,35 @@ p {
 
 .frq-questions h3 {
   position: absolute;
-  top: 0;
-  left: 270px;
-  font-size: 2.7rem;
-  width: 400px;
+  top: 5vh;
+  left: 8vw;
+  font-size: 3.0rem;
+  width: 600px;
 }
 
 .section-content {
   display: flex;
   align-items: center;
-  gap: 10rem;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .section-content .chat-up {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 60%;
+  position: relative;
+  top: -10%;
+}
+
+.section-content .chat-up p{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.0rem;
+}
+.section-content .chat-up span{
+  color: rgba(0,0,0,1);
+  font-size: 1.2rem;
 }
 
 .chat-icon {
@@ -519,4 +615,116 @@ p {
 
 .app-questions .asked-question {
   background: #4a914a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  padding: 0px 10px 0px 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.asked-question > p{
+  color: #f0ecec;
+}
+
+.section-5{
+  height: 90vh;
+  width: 100%;
+  background-color: #4A914A;
+}
+
+.section-5 > h2{
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 30px;
+  position: relative;
+  left: 6vw;
+  width: 30vw;
+}
+
+.section-5 > p{
+  font-size: 1.5rem;
+  color: #ffffff;
+  position: relative;
+  left: 10vw;
+  top: -5vh;
+  transform: translateX(-1.5vw);
+  width: 50vw;
+}
+
+.support-sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.support-option-container{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.support-option{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+}
+
+.support-contact{
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.support-option > img{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer{
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > img{
+  width: 300px;
+  height: 200px;
+}
+
+.foot-note{
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+
+.foot-note a{
+  width: 8vw;
+  color: #000000;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.follow-us a > img{
+  width: 15px;
+  height: 15px;
+}
+.follow-us a{
+  width: 15px;
+  height: 15px;
 }
