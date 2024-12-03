@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   overflow-x: none;
@@ -33,6 +37,10 @@ header {
   align-items: center;
   height: 90px;
   padding: 12px 30px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .nav-content {
@@ -94,53 +102,53 @@ header {
   padding: 40px;
 }
 
-.title-text{
+.title-text {
   font-size: 2rem;
   width: 50vw;
 }
-.title-text h1{
+.title-text h1 {
   font-weight: 400;
 }
-.title-text h1 span{
+.title-text h1 span {
   font-weight: 600;
 }
-.title-p{
+.title-p {
   width: 50vw;
 }
 
-.content-btn{
+.content-btn {
   width: 150px;
   height: 40px;
   border: none;
   border-radius: 9px;
   font-size: 1.2rem;
   font-weight: 300;
-  background-color: #4F984F;
+  background-color: #4f984f;
   color: #ffffff;
 }
 
-.hashtags ul{
+.hashtags ul {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.highlight{
+.highlight {
   color: #4f984f;
 }
 
-.team p{
+.team p {
   font-size: 1.2rem;
 }
 
-.view-more{
+.view-more a {
   width: 170px;
   height: 50px;
   border: none;
   border-radius: 30px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 300;
-  background-color: #4F984F;
+  background-color: #4f984f;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -151,7 +159,7 @@ header {
   transform: translate(-50%, -70%);
 }
 
-.view-more img{
+.view-more img {
   width: 20px;
   height: 20px;
 }
@@ -164,7 +172,7 @@ header {
   width: 180px;
 }
 
-.main-content{
+.main-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -288,7 +296,7 @@ header {
   flex-direction: column;
   position: relative;
   text-align: left;
-  padding: 70px 40px;
+  padding: 100px 40px;
   gap: 3rem;
   z-index: 1;
 }
@@ -405,8 +413,8 @@ p {
   gap: 1rem;
 }
 
-.section-3 > .write-up > p{
-  font-size: 1.0rem;
+.section-3 > .write-up > p {
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -425,7 +433,7 @@ p {
 }
 
 .mission > .second {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 200;
   width: 470px;
 }
@@ -560,7 +568,7 @@ p {
   position: absolute;
   top: 5vh;
   left: 8vw;
-  font-size: 3.0rem;
+  font-size: 3rem;
   width: 600px;
 }
 
@@ -580,12 +588,12 @@ p {
   top: -10%;
 }
 
-.section-content .chat-up p{
+.section-content .chat-up p {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
-.section-content .chat-up span{
-  color: rgba(0,0,0,1);
+.section-content .chat-up span {
+  color: rgba(0, 0, 0, 1);
   font-size: 1.2rem;
 }
 
@@ -624,17 +632,17 @@ p {
   border-radius: 10px;
 }
 
-.asked-question > p{
+.asked-question > p {
   color: #f0ecec;
 }
 
-.section-5{
+.section-5 {
   height: 90vh;
   width: 100%;
-  background-color: #4A914A;
+  background-color: #4a914a;
 }
 
-.section-5 > h2{
+.section-5 > h2 {
   font-size: 4.5rem;
   font-weight: 500;
   color: #ffffff;
@@ -644,7 +652,7 @@ p {
   width: 30vw;
 }
 
-.section-5 > p{
+.section-5 > p {
   font-size: 1.5rem;
   color: #ffffff;
   position: relative;
@@ -654,20 +662,20 @@ p {
   width: 50vw;
 }
 
-.support-sec{
+.support-sec {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10rem;
 }
 
-.support-option-container{
+.support-option-container {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.support-option{
+.support-option {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -678,19 +686,19 @@ p {
   padding: 0px 10px 0px 10px;
 }
 
-.support-contact{
+.support-contact {
   color: #ffffff;
   font-size: 1.3rem;
 }
 
-.support-option > img{
+.support-option > img {
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 5px;
 }
 
-footer{
+footer {
   height: 20vh;
   width: 100vw;
   display: flex;
@@ -698,18 +706,18 @@ footer{
   justify-content: space-between;
 }
 
-footer > img{
+footer > img {
   width: 300px;
   height: 200px;
 }
 
-.foot-note{
+.foot-note {
   display: flex;
   flex-direction: column;
   width: 10vw;
 }
 
-.foot-note a{
+.foot-note a {
   width: 8vw;
   color: #000000;
 }
@@ -720,11 +728,11 @@ footer > img{
   align-items: center;
 }
 
-.follow-us a > img{
+.follow-us a > img {
   width: 15px;
   height: 15px;
 }
-.follow-us a{
+.follow-us a {
   width: 15px;
   height: 15px;
 }
