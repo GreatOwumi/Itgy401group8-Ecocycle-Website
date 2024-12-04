@@ -85,3 +85,8 @@ h1 {
   background: #439343;
   background-color: #086b06;
 }
+
+button a {
+  color: white;
+  text-decoration: none;
+}

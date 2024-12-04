@@ -37,10 +37,30 @@ header {
   align-items: center;
   height: 90px;
   padding: 12px 30px;
+  transition: 0.3s ease;
+  
 }
 
 button {
   cursor: pointer;
+}
+
+.nav-button:hover{
+  background-color: #086b06;
+}
+
+.content-btn a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-button a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.content-btn:hover{
+  background-color: #086b06;
 }
 
 .nav-content {
@@ -509,6 +529,13 @@ p {
   justify-content: flex-end;
   gap: 1.5rem;
   height: 60px;
+  transition: 0.3s ease;
+}
+button:hover{
+  background-color: #086b06;
+}
+.start:hover{
+  background-color: #086b06;
 }
 
 .join-in h5 {
