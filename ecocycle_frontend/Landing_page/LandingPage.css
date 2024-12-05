@@ -112,13 +112,14 @@ button {
   border-radius: 20px;
 }
 
+.nav-button a {
+  color: #ffffff;
+}
+
 .main-container {
   width: 80%;
   display: flex;
   justify-content: center;
-  /*
-  align-items: center; */
-  /* background: #fafafa; */
   padding: 40px;
 }
 
@@ -138,12 +139,16 @@ button {
 
 .content-btn {
   width: 150px;
-  height: 40px;
+  padding: 12px;
   border: none;
   border-radius: 9px;
   font-size: 1.2rem;
   font-weight: 300;
   background-color: #4f984f;
+  color: #ffffff;
+}
+
+.content-btn a {
   color: #ffffff;
 }
 
