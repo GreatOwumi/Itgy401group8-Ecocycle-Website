@@ -30,6 +30,7 @@ header {
 
 .nav-container {
   background-color: #e6f6e6;
+  position: fixed;
   width: 100%;
   display: flex;
   position: relative;
@@ -38,28 +39,27 @@ header {
   height: 90px;
   padding: 12px 30px;
   transition: 0.3s ease;
-  
 }
 
 button {
   cursor: pointer;
 }
 
-.nav-button:hover{
+.nav-button:hover {
   background-color: #086b06;
 }
 
-.content-btn a{
+.content-btn a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.nav-button a{
+.nav-button a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.content-btn:hover{
+.content-btn:hover {
   background-color: #086b06;
 }
 
@@ -531,10 +531,10 @@ p {
   height: 60px;
   transition: 0.3s ease;
 }
-button:hover{
+button:hover {
   background-color: #086b06;
 }
-.start:hover{
+.start:hover {
   background-color: #086b06;
 }
 

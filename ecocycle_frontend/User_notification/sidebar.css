@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap");
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +9,17 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f9f9f9;
   color: #333;
   display: flex;
   min-height: 100vh;
 }
 
-.container {
+.dashboard {
   display: flex;
   width: 100%;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
   width: 250px;
   background: #f4f4f4;
@@ -62,62 +60,4 @@ body {
 .sidebar ul li a:hover {
   background: #4b9a4b;
   color: #fff;
-}
-
-/* Main Content Styles */
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.timer p {
-  margin: 0;
-  font-size: 1rem;
-  color: #666;
-}
-
-.timer span {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.current-rank {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Leaderboard Styles */
-.leaderboard {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.leaderboard-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-.leaderboard-table th,
-.leaderboard-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.leaderboard-table tbody tr:hover {
-  background: #f1f1f1;
 }

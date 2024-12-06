@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Dashboard</title>
-</head>
-<body>    
+  </head>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-            <img src="../images/logo6.png" alt="logo">
-      
-            <!-- General Section -->
-            <div class="menu-section">
-              <h3>General</h3>
-              <nav class="menu">
-                <a href="#" class="menu-item active"><i>🏠</i>Dashboard</a>
-                <a href="#" class="menu-item"><i>📍</i>Centers</a>
-                <a href="#" class="menu-item"><i>🏆</i>Leaderboard</a>
-                <a href="../User_notification/notification.html" class="menu-item"><i>🔔</i>Notifications</a>
-              </nav>
-            </div>
-      
-            <!-- Finances Section -->
-            <div class="menu-section">
-              <h3>Finances</h3>
-              <nav class="menu">
-                <a href="#" class="menu-item"><i>💳</i>Withdrawal</a>
-                <a href="#" class="menu-item"><i>📊</i>Analytics</a>
-              </nav>
-            </div>
-      
-            <!-- Settings Section -->
-            <div class="menu-section">
-              <h3>Settings</h3>
-              <nav class="menu">
-                <a href="#" class="menu-item"><i>👤</i>My Profile</a>
-                <a href="#" class="menu-item"><i>🚪</i>Logout</a>
-              </nav>
-            </div>
-          </aside>
-          <div class="main-content">
-            <p>Welcome to your Dashboard</p>
-            <div class="main-content">
-                <h1>Welcome to your Dashboard</h1>
-                <p>Track your progress, rewards, and environmental impact from this page.</p>
-            
-                <!-- Chart Section -->
-                <div style="width: 80%; margin: auto;">
-                    <canvas id="myChart" width="400" height="200"></canvas>
-                </div>
-            </div>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo"><img src="" alt="" /></div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li>
+              <a href="../User_dashboard/dashboard.html" class="active"
+                >Dashboard</a
+              >
+            </li>
+            <li><a href="#">Centers</a></li>
+            <li>
+              <a href="../User_leaderboard/leaderboard.html">Leaderboard</a>
+            </li>
+            <li>
+              <a href="../User_notification/notification.html">Notifications</a>
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="../User_withdrawal/withdrawal.html">Withdrawal</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="../User_profile/profile.html">My Profile</a>
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="main-content">
+        <p>Welcome to your Dashboard</p>
+        <div class="main-content">
+          <h1>Welcome to your Dashboard</h1>
+          <p>
+            Track your progress, rewards, and environmental impact from this
+            page.
+          </p>
+
+          <!-- Chart Section -->
+          <div style="width: 80%; margin: auto">
+            <canvas id="myChart" width="400" height="200"></canvas>
           </div>
-          <div class="main-content">
-
-            <script src="../User_dashboard/dashboard.js"></script>
-
-
-          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <script src="../User_dashboard/dashboard.js"></script>
+      </div>
     </div>
-</body>
+  </body>
 </html>
