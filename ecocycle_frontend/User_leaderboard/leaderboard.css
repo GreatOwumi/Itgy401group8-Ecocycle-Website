@@ -18,7 +18,7 @@ body {
 
 .container {
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Sidebar Styles */
@@ -26,6 +26,8 @@ body {
   width: 250px;
   background: #f4f4f4;
   padding: 20px;
+  position: fixed;
+  height: 100%;
 }
 
 .sidebar .logo {
@@ -66,8 +68,26 @@ body {
 
 /* Main Content Styles */
 .main-content {
-  flex-grow: 1;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  padding: 30px 300px;
+}
+
+header h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.main-content span {
+  color: #4b9a4b;
+}
+
+.main-content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
@@ -77,47 +97,106 @@ body {
   margin-bottom: 20px;
 }
 
-.timer p {
-  margin: 0;
-  font-size: 1rem;
-  color: #666;
+.header h2 {
+  /* font-size: 5rem; */
+  font-weight: 500;
 }
 
-.timer span {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.current-rank {
-  font-size: 1rem;
-  color: #555;
+.header h2 span {
+  color: #4b9a4b;
 }
 
 /* Leaderboard Styles */
 .leaderboard {
-  background: white;
+  display: flex;
+  gap: 3rem;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
 .leaderboard-table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 890px;
+  padding: 20px;
+  /* border-collapse: collapse; */
+  /* border-radius: 6000px; */
   text-align: left;
 }
 
 .leaderboard-table th,
 .leaderboard-table td {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: 400;
+}
+
+.rows {
+  width: 890px;
+  height: 95px;
+  /* border-radius: 18px; */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  /* padding-left: 20px; */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  padding-right: 10px;
+}
+
+.row6 {
+  width: 890px;
+  height: 95px;
+  border-radius: 11px;
+  background-color: #ffffff;
 }
 
 .leaderboard-table tbody tr:hover {
   background: #f1f1f1;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.time img {
+  width: 100px;
+}
+
+.time p {
+  font-size: 1.8rem;
+  color: #4b9a4b;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.time p span,
+.rank span {
+  font-weight: 600;
+}
+
+.rank span {
+  color: #000;
+}
+
+.rank {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 30px;
 }

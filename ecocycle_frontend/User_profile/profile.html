@@ -36,76 +36,111 @@
         </nav>
       </aside>
       <div class="main-content">
-        <!-- Breadcrumb navigation -->
-        <div class="breadcrumb">General >My Profile</div>
+        <header>
+          <h2 id="breadcrumb"></h2>
+        </header>
 
         <!-- Profile Section -->
         <section class="profile-section">
-          <!-- Avatar and verify button -->
           <div class="profile-avatar">
-            <!-- Placeholder for the profile picture -->
-            <div class="avatar"></div>
-            <!-- Button to verify account -->
+            <div class="avatar">
+              <img
+                src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <button class="pic-btn">
+                <img src="../User_profile/pencil.png" alt="" />
+              </button>
+              <button class="pic-btn">
+                <img src="../User_profile/bin.png" alt="" />
+              </button>
+            </div>
             <button class="verify-btn">Verify account</button>
           </div>
 
           <!-- Profile Form -->
           <form class="profile-form">
-            <!-- First Name and Last Name side by side -->
+            <div class="person">
+              <p>Personal information</p>
+            </div>
             <div class="form-group">
-              <div>
+              <div class="input-div">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" value="Seun" />
               </div>
-              <div>
+              <div class="input-div">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" value="Ebesuwa" />
               </div>
             </div>
-
-            <!-- Full-width Email Field -->
             <div class="form-group full-width">
-              <div>
+              <div class="input-div">
                 <label for="email">Email</label>
                 <input type="email" id="email" value="Dontstressme@gmail.com" />
               </div>
             </div>
-
-            <!-- Phone Number and State/County side by side -->
             <div class="form-group">
-              <div>
+              <div class="input-div">
                 <label for="phone-number">Phone Number</label>
                 <input type="tel" id="phone-number" value="07045023336" />
               </div>
-              <div>
+              <div class="input-div">
                 <label for="state">State/County</label>
                 <input type="text" id="state" value="Lagos State" />
               </div>
             </div>
-
-            <!-- Postal Code and Country side by side -->
             <div class="form-group">
-              <div>
+              <div class="input-div">
                 <label for="postal-code">Postal Code</label>
                 <input type="text" id="postal-code" value="1123" />
               </div>
-              <div>
+              <div class="input-div">
                 <label for="country">Country</label>
                 <input type="text" id="country" value="Nigeria" />
               </div>
             </div>
-
-            <!-- Edit Button -->
-            <button type="button" class="edit-btn">Edit</button>
+            <div class="edit-verify">
+              <button type="button" class="edit-btn">Edit</button>
+              <p class="verification-note">
+                Your account has not been verified, you will not be able to make
+                withdrawals.
+              </p>
+            </div>
           </form>
         </section>
-
-        <!-- Verification Note -->
-        <p class="verification-note">
-          Your account has not been verified, you will not be able to make
-          withdrawals.
-        </p>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select the sidebar menu and active link
+        const activeLink = document.querySelector(".sidebar .active");
+
+        // Select the breadcrumb element
+        const breadcrumbElement = document.getElementById("breadcrumb");
+
+        if (activeLink) {
+          // Find the parent <span> for the active link (category)
+          const category = activeLink.closest("li").previousElementSibling;
+
+          // Ensure the breadcrumb only updates if both category and active link are valid
+          if (
+            category &&
+            category.tagName === "LI" &&
+            category.querySelector("span")
+          ) {
+            const categoryName = category
+              .querySelector("span")
+              .textContent.trim();
+            const linkName = activeLink.textContent.trim();
+
+            // Update breadcrumb dynamically
+            breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
+          }
+        }
+      });
+    </script>
   </body>
 </html>

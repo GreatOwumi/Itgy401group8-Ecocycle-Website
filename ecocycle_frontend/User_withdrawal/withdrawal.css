@@ -16,14 +16,16 @@ body {
 
 .dashboard {
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Sidebar */
 .sidebar {
+  position: fixed;
   width: 250px;
-  background: #f4f4f4;
+  background: #ffffff;
   padding: 20px;
+  height: 100%;
 }
 
 .sidebar .logo {
@@ -64,17 +66,22 @@ body {
 
 /* Main Content */
 .content {
-  flex: 1;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 20px 30px 0px 300px;
+  background-color: #f4f4f4;
+  width: 100vw;
 }
 
 header h2 {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .content span {
   color: #4b9a4b;
+  justify-content: flex-end;
 }
 
 .content header {
@@ -86,20 +93,27 @@ header h2 {
 .select {
   text-align: center;
   padding-top: 10px;
+  color: #818181;
+  font-size: 20px;
 }
 
 .payment {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
 }
 
 .payment-content {
-  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #ffffff;
   width: 550px;
-  height: 400px;
+  height: 480px;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .banks {
@@ -107,13 +121,73 @@ header h2 {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  padding-top: 20px;
+}
+
+.banks a {
+  color: #4b9a4b;
+}
+
+.banks a:hover {
+  color: blue;
 }
 
 .bank-pic {
   display: flex;
-  /* background-color: #fff; */
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
 }
 
 .bank-pic img {
   width: 70px;
+  height: 50px;
+}
+
+.account-details {
+  text-align: center;
+  color: #818181;
+}
+
+.amount-details {
+  text-align: center;
+  color: #818181;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.with-button {
+  padding: 18px;
+  width: 250px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #439343;
+  background-color: #4b9a4b;
+  box-shadow: #818181;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #818181;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #818181;
+  outline: none;
 }

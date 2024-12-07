@@ -45,47 +45,67 @@
           <p>S.Ebiesuwa</p>
         </header>
 
-        <p class="select">Select payment method</p>
-
         <div class="payment">
+          <p class="select">Select payment method</p>
           <div class="payment-content">
             <div class="banks">
               <div class="bank-pic">
-                <img src="../User_withdrawal/img/UBA.jpg" alt="uba logo" />
+                <img src="img/UBA.jpg" alt="uba logo" />
               </div>
               <div class="bank-pic">
-                <img
-                  src="../User_withdrawal/img/paypal.png"
-                  alt="paypal logo"
-                />
+                <img src="img/paypal.png" alt="paypal logo" />
               </div>
               <div class="bank-pic">
-                <img
-                  src="../User_withdrawal/img/Accessbank1.png"
-                  alt="access logo"
-                />
+                <img src="img/Accessbank1.png" alt="access logo" />
               </div>
 
               <a href="#">More</a>
             </div>
-
             <div class="account-details">
               <label for="account-no">Account number</label>
               <input type="text" id="account-no" name="account-no" />
-
-              <br />
-
-              <label for="amount">Enter Amount</label>
+            </div>
+            <div class="amount-details">
+              <label for="amount">Enter Amount</label><br />
               <input type="text" id="amount" name="account-no" />
-
-              <br />
-
-              <button type="button">Withdraw Earnings</button>
+            </div>
+            <div class="btn-container">
+              <button type="button" class="with-button">
+                Withdraw Earnings
+              </button>
             </div>
           </div>
         </div>
       </main>
     </div>
-    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select the sidebar menu and active link
+        const activeLink = document.querySelector(".sidebar .active");
+
+        // Select the breadcrumb element
+        const breadcrumbElement = document.getElementById("breadcrumb");
+
+        if (activeLink) {
+          // Find the parent <span> for the active link (category)
+          const category = activeLink.closest("li").previousElementSibling;
+
+          // Ensure the breadcrumb only updates if both category and active link are valid
+          if (
+            category &&
+            category.tagName === "LI" &&
+            category.querySelector("span")
+          ) {
+            const categoryName = category
+              .querySelector("span")
+              .textContent.trim();
+            const linkName = activeLink.textContent.trim();
+
+            // Update breadcrumb dynamically
+            breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
+          }
+        }
+      });
+    </script>
   </body>
 </html>

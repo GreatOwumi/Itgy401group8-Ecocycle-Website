@@ -40,66 +40,144 @@
       <main class="main-content">
         <!-- Header section -->
         <header class="header">
-          <div class="timer">
-            <p>Time left:</p>
-            <span id="timer">00:00:00</span>
-          </div>
-          <p class="current-rank">Current rank: <strong>234th</strong></p>
+          <h2 id="breadcrumb"></h2>
         </header>
-
-        <!-- Leaderboard section -->
+        <div class="board-content">
+                 <!-- Leaderboard section -->
         <section class="leaderboard">
+          <div >
           <h3 class="section-title">Leaderboard</h3>
           <table class="leaderboard-table">
             <thead>
               <tr>
-                <th>#</th>
+                <th></th>
                 <th>People</th>
                 <th>Today</th>
                 <th>Material</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody class="tdetails">
+              <tr class="rows">
                 <td>1</td>
-                <td>Emma Emmanuel</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Emma Emmanuel
+                </td>
                 <td>35.8kg</td>
-                <td>🏆</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g 3.svg"
+                  />
+                </td>
               </tr>
-              <tr>
+
+              <tr class="rows">
                 <td>2</td>
-                <td>Mary Nelson</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Mary Nelson
+                </td>
                 <td>30.4kg</td>
-                <td>📜</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g.svg"
+                  />
+                </td>
               </tr>
-              <tr>
+              <tr class="rows">
                 <td>3</td>
-                <td>John Andrew</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />John Andrew
+                </td>
                 <td>22.2kg</td>
-                <td>📄</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/aluminum g 3.svg"
+                  />
+                </td>
               </tr>
-              <tr>
+              <tr class="rows">
                 <td>4</td>
-                <td>Tim Edward</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Tim Edward
+                </td>
                 <td>20.3kg</td>
-                <td>📋</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/aluminum g 3.svg"
+                  />
+                </td>
               </tr>
-              <tr>
+              <tr class="rows">
                 <td>5</td>
-                <td>Maria Drake</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Maria Drake
+                </td>
                 <td>18.5kg</td>
-                <td>📑</td>
+                <td>
+                  <img src="../User_leaderboard/LeadershipImg/scroll g 3.svg" />
+                </td>
               </tr>
-              <tr>
+              <tr class="row6">
                 <td>6</td>
-                <td>Emma Lionel</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Emma Lionel
+                </td>
                 <td>11.8kg</td>
-                <td>📂</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g.svg"
+                  />
+                </td>
               </tr>
             </tbody>
           </table>
+          </div>
+          <div class="time">
+            <div class="time-left">
+          <img src="../User_leaderboard/LeadershipImg/chronometer 1.svg" />
+        <p><span>Time left:</span><br />11:23:52</p>
+            </div>
+      <div class="rank"><span>Current rank:</span><br />234th</div>
+            </div>
         </section>
       </main>
+        </div>
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Select the sidebar menu and active link
+  const activeLink = document.querySelector(".sidebar .active");
+
+  // Select the breadcrumb element
+  const breadcrumbElement = document.getElementById("breadcrumb");
+
+  if (activeLink) {
+    // Find the nearest preceding <span> (category name) before the active link
+    const categorySpan = activeLink
+      .closest("ul")
+      .querySelector("li > span");
+
+    // Ensure the breadcrumb only updates if the categorySpan and active link are valid
+    if (categorySpan) {
+      const categoryName = categorySpan.textContent.trim();
+      const linkName = activeLink.textContent.trim();
+
+      // Update breadcrumb dynamically
+      breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
+    }
+  }
+});
+    </script>
   </body>
 </html>

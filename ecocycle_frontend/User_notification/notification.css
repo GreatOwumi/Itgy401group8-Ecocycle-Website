@@ -73,12 +73,21 @@ main {
   border-radius: 10px;
 }
 
-header {
-  display: flex;
-  justify-content: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
+header h2 {
+  font-size: 1.2em;
   margin-bottom: 20px;
-  gap: 20px; /* Adds spacing between elements if needed */
+  font-weight: 600;
+}
+
+main span {
+  color: #4b9a4b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 header input[type="search"] {
