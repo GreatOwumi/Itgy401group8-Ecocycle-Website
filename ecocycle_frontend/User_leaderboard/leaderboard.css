@@ -19,6 +19,7 @@ body {
 .container {
   display: flex;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Sidebar Styles */
@@ -30,11 +31,9 @@ body {
   height: 100%;
 }
 
-.sidebar .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: green;
+.sidebar .logo img {
+  width: 180px;
+  height: 120px;
 }
 
 .sidebar ul {
@@ -173,14 +172,19 @@ th {
 .time-left {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  position: absolute;
+  right: 2%;
+  top: 1%;
 }
 
 .time img {
-  width: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .time p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #4b9a4b;
   width: 200px;
   margin-top: 15px;
@@ -193,10 +197,14 @@ th {
 
 .rank span {
   color: #000;
+  font-size: 1.2rem;
 }
 
 .rank {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-top: 30px;
+  position: absolute;
+  right: 10%;
+  top: 9%;
 }

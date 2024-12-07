@@ -10,26 +10,26 @@
     <div class="container">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <div class="logo"><img src="" alt="" /></div>
+        <div class="logo"><img src="../images/ECO GREEN.png" alt="" /></div>
         <nav>
           <ul>
             <li><span>GENERAL</span></li>
             <li><a href="../User_dashboard/dashboard.html">Dashboard</a></li>
             <li><a href="#">Centers</a></li>
             <li>
-              <a href="../User_leaderboard/leaderboard.html" class="active"
-                >Leaderboard</a
-              >
+              <a href="../User_leaderboard/leaderboard.html" class="active">Leaderboard</a>
             </li>
             <li>
               <a href="../User_notification/notification.html">Notifications</a>
             </li>
             <li><span>FINANCES</span></li>
             <li><a href="../User_withdrawal/withdrawal.html">Withdrawal</a></li>
-            <li><a href="#">Analytics</a></li>
+            <li><a href="../User_analytics/analytics.html">Analytics</a></li>
             <li><span>SETTINGS</span></li>
             <li>
-              <a href="../User_profile/profile.html">My Profile</a>
+              <a href="../User_profile/profile.html"
+                >My Profile</a
+              >
             </li>
             <li><a href="#">Logout</a></li>
           </ul>
@@ -145,39 +145,15 @@
           </div>
           <div class="time">
             <div class="time-left">
-          <img src="../User_leaderboard/LeadershipImg/chronometer 1.svg" />
-        <p><span>Time left:</span><br />11:23:52</p>
+              <img src="../User_leaderboard/LeadershipImg/chronometer 1.svg" />
+              <p><span>Time left:</span><br /><span id="timer">00:00:00</span></p>
             </div>
-      <div class="rank"><span>Current rank:</span><br />234th</div>
-            </div>
+            <div class="rank"><span>Current rank:</span><br />234th</div>
+          </div>
         </section>
       </main>
         </div>
     </div>
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-  // Select the sidebar menu and active link
-  const activeLink = document.querySelector(".sidebar .active");
-
-  // Select the breadcrumb element
-  const breadcrumbElement = document.getElementById("breadcrumb");
-
-  if (activeLink) {
-    // Find the nearest preceding <span> (category name) before the active link
-    const categorySpan = activeLink
-      .closest("ul")
-      .querySelector("li > span");
-
-    // Ensure the breadcrumb only updates if the categorySpan and active link are valid
-    if (categorySpan) {
-      const categoryName = categorySpan.textContent.trim();
-      const linkName = activeLink.textContent.trim();
-
-      // Update breadcrumb dynamically
-      breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
-    }
-  }
-});
-    </script>
+    <script src="./leaderboard.js"></script>
   </body>
 </html>
