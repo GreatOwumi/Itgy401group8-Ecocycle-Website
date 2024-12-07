@@ -26,11 +26,9 @@ body {
   padding: 20px;
 }
 
-.sidebar .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: green;
+.sidebar .logo img {
+  width: 180px;
+  height: 120px;
 }
 
 .sidebar ul {

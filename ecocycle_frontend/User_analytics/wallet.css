@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap");
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar styles */
+.container {
+    display: flex;
+    width: 100vw;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .sidebar .logo img {
+    width: 180px;
+    height: 120px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li span {
+    font-size: 0.8em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .sidebar ul li a.active,
+  .sidebar ul li a:hover {
+    background: #4b9a4b;
+    color: #fff;
+  }
+   
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Wallet Section */
+.wallet {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 20px; /* Add space between cards */
+    margin: 20px 0;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-30%);
+}
+
+.total-earnings {
+    grid-column: 1; /* Ensure it's in the first column */
+    grid-row: 1; /* Place it in the first row */
+}
+
+.balance {
+    grid-column: 1; /* Ensure it's in the first column */
+    grid-row: 2; /* Place it below Total Earnings */
+    margin-top: 20px; /* Add spacing between Total Earnings and Balance */
+}
+
+.pending-withdrawal {
+    grid-column: 2; /* Ensure it's in the second column */
+    grid-row: 1; /* Place it in the first row */
+}
+
+.withdrawn-today {
+    grid-column: 2; /* Ensure it's in the second column */
+    grid-row: 2; /* Place it below Pending Withdrawal */
+    margin-top: 20px; /* Add spacing between Pending Withdrawal and Withdrawn Today */
+}
+
+.wallet-card {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for visuals */
+    transition: transform 0.2s ease;
+}
+
+.wallet-card:hover {
+    transform: scale(1.05);
+}
+
+.wallet-card .amount {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.wallet-card i {
+    font-size: 2rem;
+    color: #26b526;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Payout History Table */
+.payout-history table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-35%);
+}
+
+.payout-history table th, .payout-history table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.payout-history table th {
+    background-color: #f1f1f1;
+}
+
+.status-requested {
+    color: red;
+}
+
+.status-withdrawn {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .wallet {
+        grid-template-columns: 1fr; /* Single-column layout on smaller screens */
+        gap: 15px; /* Reduce spacing for smaller screens */
+    }
+
+    .wallet-card {
+        text-align: left;
+    }
+
+    .payout-history table {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .wallet {
+        grid-template-columns: 1fr;
+    }
+
+    .wallet-card {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .sidebar nav ul li {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}

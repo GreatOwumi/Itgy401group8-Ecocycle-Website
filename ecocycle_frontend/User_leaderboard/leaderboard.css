@@ -20,12 +20,16 @@ body {
   display: flex;
   width: 100vw;
   overflow-x: hidden;
+  background: url(../images/user-role-background-image.png);
+  background-position: left;
+  background-size: contain;
 }
 
 /* Sidebar Styles */
 .sidebar {
   width: 250px;
-  background: #f4f4f4;
+  background: url(../images/user-role-background-image.png);
+  background-size: cover;
   padding: 20px;
   position: fixed;
   height: 100%;
