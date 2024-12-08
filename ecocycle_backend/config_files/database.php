@@ -1,11 +1,10 @@
-# Database connection setup
 <?php
 $servername = "localhost";
-$username = "root";        // Default username for local databases
-$password = "";            // Default password (leave empty for local servers)
-$dbname = "ecocycle";      // Database name
+$username = "root";    // Default username for XAMPP
+$password = "";        // Default password for XAMPP is blank
+$dbname = "ecocycle_db";  // The name of your database
 
-// Create a connection
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection

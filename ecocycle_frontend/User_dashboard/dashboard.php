@@ -1,3 +1,16 @@
+<?php
+// Start the session or include any necessary PHP code here
+session_start();
+// You can include database connection or other PHP logic here
+// For example:
+// include 'db_connection.php';
+// Check if the user is logged in, etc.
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
