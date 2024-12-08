@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  height: 100%;
+}
+
+.sidebar .logo img {
+  width: 130px;
+  /* height: 120px; */
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li span {
+  font-size: 0.8em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background: #4b9a4b;
+  color: #fff;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 0px 300px;
+  background-color: #f4f4f4;
+  width: 100vw;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content span {
+  color: #4b9a4b;
+  justify-content: flex-end;
+}
+
+.content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select {
+  text-align: center;
+  padding-top: 10px;
+  color: #818181;
+  font-size: 20px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #ffffff;
+  width: 550px;
+  height: 480px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.banks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 20px;
+}
+
+.banks a {
+  color: #4b9a4b;
+}
+
+.banks a:hover {
+  color: blue;
+}
+
+.bank-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+}
+
+.bank-pic img {
+  width: 70px;
+  height: 50px;
+}
+
+.account-details {
+  text-align: center;
+  color: #818181;
+}
+
+.amount-details {
+  text-align: center;
+  color: #818181;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.with-button {
+  padding: 18px;
+  width: 250px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #439343;
+  background-color: #4b9a4b;
+  box-shadow: #818181;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #818181;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #818181;
+  outline: none;
+}

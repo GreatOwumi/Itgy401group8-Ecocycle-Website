@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo"><img src="../images/ECO GREEN.png" alt="" /></div>
+            <nav>
+              <ul>
+                <li><span>GENERAL</span></li>
+                <li><a href="../User_dashboard/dashboard.html">Dashboard</a></li>
+                <li><a href="#">Centers</a></li>
+                <li>
+                  <a href="../User_leaderboard/leaderboard.html"
+                    >Leaderboard</a
+                  >
+                </li>
+                <li>
+                  <a href="../User_notification/notification.html">Notifications</a>
+                </li>
+                <li><span>FINANCES</span></li>
+                <li><a href="../User_withdrawal/withdrawal.html">Withdrawal</a></li>
+                <li><a href="../User_analytics/analytics.html" class="active">Analytics</a></li>
+                <li><span>SETTINGS</span></li>
+                <li>
+                  <a href="../User_profile/profile.html">My Profile</a>
+                </li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h5>General > Analytics</h5>
+
+            <!-- Wallet Section -->
+            <h3>MY WALLET</h3>   
+            <div class="wallet"> 
+                <div class="wallet-card total-earnings">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Total Earnings</p>
+                    <p class="amount">&#8358;921,780.02</p>
+                </div>
+                <div class="wallet-card balance">
+                    <i class="fas fa-wallet"></i>
+                    <p>Balance</p>
+                    <p class="amount">&#8358;119,233.70</p>
+                </div>
+                <div class="wallet-card pending-withdrawal">
+                    <i class="fas fa-hourglass-half"></i>
+                    <p>Pending Withdrawal</p>
+                    <p class="amount">&#8358;7,890.02</p>
+                </div>
+                <div class="wallet-card withdrawn-today">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Withdrawn Today</p>
+                    <p class="amount">&#8358;0.00</p>
+                </div>
+            </div>
+
+            <!-- Payout History Section -->
+            <div class="payout-history">
+                <h3>PAYOUT HISTORY</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Payout ID</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Payment Method</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12</td>
+                            <td>&#8358;7890.02</td>
+                            <td class="status-requested">Requested</td>
+                            <td>BANK</td>
+                            <td>October 28th 2024, 6:15pm</td>
+                        </tr>
+                        <tr>
+                            <td>#11</td>
+                            <td>&#8358;1292.83</td>
+                            <td class="status-withdrawn">Withdrawn</td>
+                            <td>BANK</td>
+                            <td>March 13th 2024, 3:20pm</td>
+                        </tr>
+                        <tr>
+                            <td>#10</td>
+                            <td>&#8358;757.54</td>
+                            <td class="status-withdrawn">Withdrawn</td>
+                            <td>BANK</td>
+                            <td>March 4th 2024, 8:10pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">View full history.</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="wallet.js"></script>
+</body>
+</html>

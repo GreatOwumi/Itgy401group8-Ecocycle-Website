@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="withdrawal.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo"><img src="../images/ECO GREEN.png" alt="" /></div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="../User_dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="#">Centers</a></li>
+            <li>
+              <a href="../User_leaderboard/leaderboard.html">Leaderboard</a>
+            </li>
+            <li>
+              <a href="../User_notification/notification.html">Notifications</a>
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="../User_withdrawal/withdrawal.html" class="active">Withdrawal</a></li>
+            <li><a href="../User_analytics/analytics.html">Analytics</a></li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="../User_profile/profile.html"
+                >My Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <header>
+          <h2 id="breadcrumb"></h2>
+          <p>S.Ebiesuwa</p>
+        </header>
+
+        <div class="payment">
+          <p class="select">Select payment method</p>
+          <div class="payment-content">
+            <div class="banks">
+              <div class="bank-pic">
+                <img src="img/UBA.jpg" alt="uba logo" />
+              </div>
+              <div class="bank-pic">
+                <img src="img/paypal.png" alt="paypal logo" />
+              </div>
+              <div class="bank-pic">
+                <img src="img/Accessbank1.png" alt="access logo" />
+              </div>
+
+              <a href="#">More</a>
+            </div>
+            <div class="account-details">
+              <label for="account-no">Account number</label>
+              <input type="text" id="account-no" name="account-no" />
+            </div>
+            <div class="amount-details">
+              <label for="amount">Enter Amount</label><br />
+              <input type="text" id="amount" name="account-no" />
+            </div>
+            <div class="btn-container">
+              <button type="button" class="with-button">
+                Withdraw Earnings
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select the sidebar menu and active link
+        const activeLink = document.querySelector(".sidebar .active");
+
+        // Select the breadcrumb element
+        const breadcrumbElement = document.getElementById("breadcrumb");
+
+        if (activeLink) {
+          // Find the parent <span> for the active link (category)
+          const category = activeLink.closest("li").previousElementSibling;
+
+          // Ensure the breadcrumb only updates if both category and active link are valid
+          if (
+            category &&
+            category.tagName === "LI" &&
+            category.querySelector("span")
+          ) {
+            const categoryName = category
+              .querySelector("span")
+              .textContent.trim();
+            const linkName = activeLink.textContent.trim();
+
+            // Update breadcrumb dynamically
+            breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

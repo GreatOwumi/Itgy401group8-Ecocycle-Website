@@ -1,81 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-  <link rel="stylesheet" href="profile.css">
-</head>
-<body>
-  <div class="container">
-    <!-- Breadcrumb navigation -->
-    <div class="breadcrumb">General > My Profile</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo"><img src="../images/ECO GREEN.png" alt="" /></div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="../User_dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="#">Centers</a></li>
+            <li>
+              <a href="../User_leaderboard/leaderboard.html">Leaderboard</a>
+            </li>
+            <li>
+              <a href="../User_notification/notification.html">Notifications</a>
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="../User_withdrawal/withdrawal.html">Withdrawal</a></li>
+            <li><a href="../User_analytics/analytics.html">Analytics</a></li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="../User_profile/profile.html" class="active"
+                >My Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <header>
+          <h2 id="breadcrumb"></h2>
+        </header>
 
-    <!-- Profile Section -->
-    <section class="profile-section">
-      <!-- Avatar and verify button -->
-      <div class="profile-avatar">
-        <!-- Placeholder for the profile picture -->
-        <div class="avatar"></div>
-        <!-- Button to verify account -->
-        <button class="verify-btn">Verify account</button>
+        <!-- Profile Section -->
+        <section class="profile-section">
+          <div class="profile-avatar">
+            <div class="avatar">
+              <img
+                src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <button class="pic-btn">
+                <img src="../User_profile/pencil.png" alt="" />
+              </button>
+              <button class="pic-btn">
+                <img src="../User_profile/bin.png" alt="" />
+              </button>
+            </div>
+            <button class="verify-btn">Verify account</button>
+          </div>
+
+          <!-- Profile Form -->
+          <form class="profile-form">
+            <div class="person">
+              <p>Personal information</p>
+            </div>
+            <div class="form-group">
+              <div class="input-div">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" value="Seun" />
+              </div>
+              <div class="input-div">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" value="Ebesuwa" />
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <div class="input-div">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="Dontstressme@gmail.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-div">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" value="07045023336" />
+              </div>
+              <div class="input-div">
+                <label for="state">State/County</label>
+                <input type="text" id="state" value="Lagos State" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-div">
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" value="1123" />
+              </div>
+              <div class="input-div">
+                <label for="country">Country</label>
+                <input type="text" id="country" value="Nigeria" />
+              </div>
+            </div>
+            <div class="edit-verify">
+              <button type="button" class="edit-btn">Edit</button>
+              <p class="verification-note">
+                Your account has not been verified, you will not be able to make
+                withdrawals.
+              </p>
+            </div>
+          </form>
+        </section>
       </div>
+    </div>
 
-      <!-- Profile Form -->
-      <form class="profile-form">
-        <!-- First Name and Last Name side by side -->
-        <div class="form-group">
-          <div>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" value="Seun">
-          </div>
-          <div>
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" value="Ebesuwa">
-          </div>
-        </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select the sidebar menu and active link
+        const activeLink = document.querySelector(".sidebar .active");
 
-        <!-- Full-width Email Field -->
-        <div class="form-group full-width">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" value="Dontstressme@gmail.com">
-          </div>
-        </div>
+        // Select the breadcrumb element
+        const breadcrumbElement = document.getElementById("breadcrumb");
 
-        <!-- Phone Number and State/County side by side -->
-        <div class="form-group">
-          <div>
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" id="phone-number" value="07045023336">
-          </div>
-          <div>
-            <label for="state">State/County</label>
-            <input type="text" id="state" value="Lagos State">
-          </div>
-        </div>
+        if (activeLink) {
+          // Find the parent <span> for the active link (category)
+          const category = activeLink.closest("li").previousElementSibling;
 
-        <!-- Postal Code and Country side by side -->
-        <div class="form-group">
-          <div>
-            <label for="postal-code">Postal Code</label>
-            <input type="text" id="postal-code" value="1123">
-          </div>
-          <div>
-            <label for="country">Country</label>
-            <input type="text" id="country" value="Nigeria">
-          </div>
-        </div>
+          // Ensure the breadcrumb only updates if both category and active link are valid
+          if (
+            category &&
+            category.tagName === "LI" &&
+            category.querySelector("span")
+          ) {
+            const categoryName = category
+              .querySelector("span")
+              .textContent.trim();
+            const linkName = activeLink.textContent.trim();
 
-        <!-- Edit Button -->
-        <button type="button" class="edit-btn">Edit</button>
-      </form>
-    </section>
-
-    <!-- Verification Note -->
-    <p class="verification-note">
-      Your account has not been verified, you will not be able to make withdrawals.
-    </p>
-  </div>
-</body>
+            // Update breadcrumb dynamically
+            breadcrumbElement.innerHTML = `${categoryName} &gt; <span>${linkName}</span>`;
+          }
+        }
+      });
+    </script>
+  </body>
 </html>

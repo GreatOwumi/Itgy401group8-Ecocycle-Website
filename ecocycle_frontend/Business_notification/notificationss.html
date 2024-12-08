@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="notificationss.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+          <aside class="sidebar">
+        <div class="logo">
+          <img src="/ecocycle_frontend/images/ECO GREEN.png" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="#">Dashboard</a></li>
+            <li>
+              <a href="#">Inventory</a>
+            </li>
+            <li>
+              <a href="/ecocycle_frontend/Business_notification/notificationss.html">Notifications</a>
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="#">Analytics</a></li>
+          
+                        <li><span>SUPPORT</span></li>
+            <li><a href="#">Live chat</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="/ecocycle_frontend/Business_profile/businessprofile.html" class="active"
+                >Business Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+     <!-- Main Content -->
+     <div class="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          General &gt; <a href="#" class="active">Notifications</a>
+        <input
+            type="text"
+            id="search-bar"
+            class="search-bar"
+            placeholder="Search"
+            oninput="filterNotifications()"
+        >
+        <div class="divider"></div>
+      </div>
+        <div class="notification-panel">
+            <div class="header"></div>
+            <div class="content">
+                <h2>Notifications  <button class="4-button active">4</button></h2>
+            </div>
+                <div class="filter">
+                    <button class="filter-btn active">Unread</button>
+                    <button class="filter-btn">All</button>
+                </div>
+            <div id="notification-list" class="notification-list">
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Inventory order placed</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Withdrawal status</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Gmail verification</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Welcome message</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Profile updated</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Please verify your account</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

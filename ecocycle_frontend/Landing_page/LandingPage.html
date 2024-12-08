@@ -244,25 +244,65 @@
             </div>
           </div>
           <div class="app-questions">
-            <div class="asked-question">
-              <p>What can I recycle?</p>
-              <img src="./LandingPictures/Plus.svg" />
+            <div class="faq-item">
+              <div class="asked-question">
+                <p>What can I recycle?</p>
+                <button><img src="./LandingPictures/Plus.svg" /></button>
+              </div>
+              <div class="answer">
+                <p>
+                  You can recycle plastics, metals, papers, and electronics.
+                  Contact us for a full list!
+                </p>
+              </div>
             </div>
-            <div class="asked-question">
-              <p>How can I make money from Ecocycle?</p>
-              <img src="./LandingPictures/Plus.svg" />
+            <div class="faq-item">
+              <div class="asked-question">
+                <p>How can I make money from Ecocycle?</p>
+                <button><img src="./LandingPictures/Plus.svg" /></button>
+              </div>
+              <div class="answer">
+                <p>
+                  Earn by recycling items then type in what you recycled and its
+                  category after which you will earn your due.
+                </p>
+              </div>
             </div>
-            <div class="asked-question">
-              <p>Who can use Ecocycle</p>
-              <img src="./LandingPictures/Plus.svg" />
+            <div class="faq-item">
+              <div class="asked-question">
+                <p>Who can use Ecocycle</p>
+                <button><img src="./LandingPictures/Plus.svg" /></button>
+              </div>
+              <div class="answer">
+                <p>
+                  Ecocycle is for everyone, including households, businesses,
+                  and communities.
+                </p>
+              </div>
             </div>
-            <div class="asked-question">
-              <p>Why is Dr Ebiesuwa amazing</p>
-              <img src="./LandingPictures/Plus.svg" />
+            <div class="faq-item">
+              <div class="asked-question">
+                <p>Why is Dr Ebiesuwa amazing</p>
+                <button><img src="./LandingPictures/Plus.svg" /></button>
+              </div>
+              <div class="answer">
+                <p>
+                  Dr. Ebiesuwa's groundbreaking work inspires and drives
+                  sustainability forward.
+                </p>
+              </div>
             </div>
-            <div class="asked-question">
-              <p>Who are Scavengers</p>
-              <img src="./LandingPictures/Plus.svg" />
+            <div class="faq-item">
+              <div class="asked-question">
+                <p>Who are Scavengers</p>
+                <button><img src="./LandingPictures/Plus.svg" /></button>
+              </div>
+              <div class="answer">
+                <p>
+                  Scavengers are individuals who help recover recyclable
+                  materials from waste streams.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -326,5 +366,32 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const button = item.querySelector("button");
+          const answer = item.querySelector(".answer");
+
+          // answer.style.transition =
+          //   "max-height 0.3s ease-out, opacity 0.3s ease-out";
+
+          button.addEventListener("click", () => {
+            const isVisible = answer.style.display === "block";
+            // Hide all other answers
+            faqItems.forEach((otherItem) => {
+              const otherAnswer = otherItem.querySelector(".answer");
+              if (otherAnswer !== answer) {
+                otherAnswer.style.display = "none";
+              }
+            });
+
+            // Toggle the current answer
+            answer.style.display = isVisible ? "none" : "block";
+          });
+        });
+      });
+    </script>
   </body>
 </html>

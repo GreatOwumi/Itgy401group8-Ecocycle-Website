@@ -1,113 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoCycle Leaderboard</title>
-  <link rel="stylesheet" href="./leaderboard.css"
-</head>
-<body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2 class="logo">ECOCYCLE</h2>
-
-      <!-- General Section -->
-      <div class="menu-section">
-        <h3>General</h3>
-        <nav class="menu">
-          <a href="#" class="menu-item active"><i>🏠</i>Dashboard</a>
-          <a href="#" class="menu-item"><i>📍</i>Centers</a>
-          <a href="#" class="menu-item"><i>🏆</i>Leaderboard</a>
-          <a href="#" class="menu-item"><i>🔔</i>Notifications</a>
+  <head>
+    <link rel="stylesheet" href="leaderboard.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCycle Leaderboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo"><img src="../images/ECO GREEN.png" alt="" /></div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="../User_dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="#">Centers</a></li>
+            <li>
+              <a href="../User_leaderboard/leaderboard.html" class="active">Leaderboard</a>
+            </li>
+            <li>
+              <a href="../User_notification/notification.html">Notifications</a>
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="../User_withdrawal/withdrawal.html">Withdrawal</a></li>
+            <li><a href="../User_analytics/analytics.html">Analytics</a></li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="../User_profile/profile.html"
+                >My Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
         </nav>
-      </div>
+      </aside>
 
-      <!-- Finances Section -->
-      <div class="menu-section">
-        <h3>Finances</h3>
-        <nav class="menu">
-          <a href="#" class="menu-item"><i>💳</i>Withdrawal</a>
-          <a href="#" class="menu-item"><i>📊</i>Analytics</a>
-        </nav>
-      </div>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header section -->
+        <header class="header">
+          <h2 id="breadcrumb"></h2>
+        </header>
+        <div class="board-content">
+                 <!-- Leaderboard section -->
+        <section class="leaderboard">
+          <div >
+          <h3 class="section-title">Leaderboard</h3>
+          <table class="leaderboard-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>People</th>
+                <th>Today</th>
+                <th>Material</th>
+              </tr>
+            </thead>
+            <tbody class="tdetails">
+              <tr class="rows">
+                <td>1</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Emma Emmanuel
+                </td>
+                <td>35.8kg</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g 3.svg"
+                  />
+                </td>
+              </tr>
 
-      <!-- Settings Section -->
-      <div class="menu-section">
-        <h3>Settings</h3>
-        <nav class="menu">
-          <a href="#" class="menu-item"><i>👤</i>My Profile</a>
-          <a href="#" class="menu-item"><i>🚪</i>Logout</a>
-        </nav>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Header section -->
-      <header class="header">
-        <div class="timer">
-          <p>Time left:</p>
-          <span id="timer">00:00:00</span>
+              <tr class="rows">
+                <td>2</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Mary Nelson
+                </td>
+                <td>30.4kg</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g.svg"
+                  />
+                </td>
+              </tr>
+              <tr class="rows">
+                <td>3</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />John Andrew
+                </td>
+                <td>22.2kg</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/aluminum g 3.svg"
+                  />
+                </td>
+              </tr>
+              <tr class="rows">
+                <td>4</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Tim Edward
+                </td>
+                <td>20.3kg</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/aluminum g 3.svg"
+                  />
+                </td>
+              </tr>
+              <tr class="rows">
+                <td>5</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Maria Drake
+                </td>
+                <td>18.5kg</td>
+                <td>
+                  <img src="../User_leaderboard/LeadershipImg/scroll g 3.svg" />
+                </td>
+              </tr>
+              <tr class="row6">
+                <td>6</td>
+                <td class="user">
+                  <img
+                    src="../User_leaderboard/LeadershipImg/admindd 2.svg"
+                  />Emma Lionel
+                </td>
+                <td>11.8kg</td>
+                <td>
+                  <img
+                    src="../User_leaderboard/LeadershipImg/water-bottle (1) g.svg"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="time">
+            <div class="time-left">
+              <img src="../User_leaderboard/LeadershipImg/chronometer 1.svg" />
+              <p><span>Time left:</span><br /><span id="timer">00:00:00</span></p>
+            </div>
+            <div class="rank"><span>Current rank:</span><br />234th</div>
+          </div>
+        </section>
+      </main>
         </div>
-        <p class="current-rank">Current rank: <strong>234th</strong></p>
-      </header>
-
-      <!-- Leaderboard section -->
-      <section class="leaderboard">
-        <h3 class="section-title">Leaderboard</h3>
-        <table class="leaderboard-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>People</th>
-              <th>Today</th>
-              <th>Material</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Emma Emmanuel</td>
-              <td>35.8kg</td>
-              <td>🏆</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Mary Nelson</td>
-              <td>30.4kg</td>
-              <td>📜</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>John Andrew</td>
-              <td>22.2kg</td>
-              <td>📄</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Tim Edward</td>
-              <td>20.3kg</td>
-              <td>📋</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Maria Drake</td>
-              <td>18.5kg</td>
-              <td>📑</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Emma Lionel</td>
-              <td>11.8kg</td>
-              <td>📂</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </div>
-
-  
-</body>
+    </div>
+    <script src="./leaderboard.js"></script>
+  </body>
 </html>
