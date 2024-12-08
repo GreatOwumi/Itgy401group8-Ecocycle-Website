@@ -8,10 +8,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(../images/user-role-background-image.png);
+  /* background-image: url(../images/user-role-background-image.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: #333;
   display: flex;
   height: 100vh;
@@ -19,14 +19,21 @@ body {
 
 .container {
   display: flex;
-  width: 100%;
+  width: 100vw;
+  background-image: url(../images/user-role-background-image.png);
+  overflow-x: hidden;
+  background-position: left;
+  background-size: cover;
 }
 
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background: #f4f4f4, url(../images/user-role-background-image.png);
+  height: 100%;
+  background: #ffffff, url(../images/user-role-background-image.png);
+  background-size: cover;
   padding: 20px;
+  position: fixed;
 }
 
 /* .sidebar .logo, */
@@ -67,12 +74,16 @@ body {
 /* Main Content Styles */
 
 .main-content {
-  padding: 20px 50px;
+  display: flex;
+  /* width: #f4f4f4; */
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 20px 20px 0 300px;
 }
 
 header h2 {
   font-size: 1.2em;
-  margin-bottom: 20px;
   font-weight: 600;
 }
 
@@ -90,35 +101,48 @@ header span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.main-content p > span{
-  color: #4B9A4B;
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.profile-card{
+.user-details img {
+  width: 50px;
+}
+
+.main-content p > span {
+  color: #4b9a4b;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.profile-card {
   display: flex;
   align-items: center;
   position: relative;
   left: 100%;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.profile-pic{
+.profile-pic {
   width: 40px;
   height: 40px;
   border: none;
   border-radius: 50px;
 }
 
-.main-content .contained{
+.main-content .contained {
   display: flex;
   align-items: center;
   padding: 0px 0px 0px 50px;
 }
 
-.chart{
+.chart {
   width: 90%;
   height: 100%;
 }
@@ -137,22 +161,21 @@ header span {
   border-bottom: 1px solid #e8e8e8;
 }
 
-
-.user img{
+.user img {
   height: 30px;
   width: 30px;
 }
 
-#mats{
+#mats {
   width: 25%;
-  padding: 5px ;
+  padding: 5px;
   border: 2px solid #e8e8e8;
   border-radius: 10px;
 }
 
-#kg{
+#kg {
   width: 25%;
-  padding: 5px ;
+  padding: 5px;
   border: 2px solid #e8e8e8;
-  border-radius: 10px;  
+  border-radius: 10px;
 }

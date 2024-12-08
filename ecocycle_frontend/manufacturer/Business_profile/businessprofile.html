@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="businessprofile.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">ECOCYCLE</div>
+      <div class="menu">
+        <div class="menu-section">
+          <p>GENERAL</p>
+          <a href="#">Dashboard</a>
+          <a href="#">Inventory</a>
+          <a href="#">Notifications</a>
+        </div>
+        <div class="menu-section">
+          <p>FINANCES</p>
+          <a href="#">Analytics</a>
+        </div>
+        <div class="menu-section">
+          <p>SUPPORT</p>
+          <a href="#">Live chat</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="menu-section">
+          <p>SETTINGS</p>
+          <a href="#" class="active">Business profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        General &gt; <a href="#" class="active">Business Profile</a>
+      </div>
+
+      <!-- Profile Container -->
+      <div class="profile-container">
+        <!-- Profile Icon and Verify Button -->
+        <div class="profile-left">
+          <div class="profile-icon">
+            <img src="building-icon.png" alt="Business Icon">
+          </div>
+          <button type="verify" class="verify-button">Verify account</button>
+        </div>
+
+        <!-- Business Information Section -->
+
+        <div class="profile-right">
+          <div class="profile-form">
+            <form>
+            <div class="form-row">
+                <label>Business Information</label>
+                <div class="divider"></div>
+              <label>Company name</label>
+              <input type="text" placeholder="Malta Limited" required>
+            </div>
+            <div class="two-cols">
+              <div>
+                <label>Work email</label>
+                <input type="email" placeholder="maltacompany@gmail.com" required>
+              </div>
+              <div>
+                <label>Company size</label>
+                <input type="number" placeholder="29" required>
+              </div>
+            </div>
+
+            <div class="two-cols">
+              <div>
+                <label>Phone number</label>
+                <input type="text" placeholder="07045020336" required>
+              </div>
+              <div>
+                <label>State/County</label>
+                <input type="text" placeholder="Lagos State" required>
+              </div>
+            </div>
+
+            <div class="two-cols">
+              <div>
+                <label>Postal code</label>
+                <input type="text" placeholder="1721" required>
+              </div>
+              <div>
+                <label>Country</label>
+                <input type="text" placeholder="Nigeria" required>
+              </div>
+            </div>
+          </div>
+
+           <button type="edit" class="edit-button">Edit</button> <p class="warning-text">Your account has not been verified, you will not be able to make withdrawals</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>

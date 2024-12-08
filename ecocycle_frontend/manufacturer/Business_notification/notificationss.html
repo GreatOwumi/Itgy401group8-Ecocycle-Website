@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="notificationss.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">ECOCYCLE</div>
+      <div class="menu">
+        <div class="menu-section">
+          <p>GENERAL</p>
+          <a href="#">Dashboard</a>
+          <a href="#">Inventory</a>
+          <a href="#" class="active">Notifications</a>
+        </div>
+        <div class="menu-section">
+          <p>FINANCES</p>
+          <a href="#">Analytics</a>
+        </div>
+        <div class="menu-section">
+          <p>SUPPORT</p>
+          <a href="#">Live chat</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="menu-section">
+          <p>SETTINGS</p>
+          <a href="#"> Business profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+     <!-- Main Content -->
+     <div class="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          General &gt; <a href="#" class="active">Notifications</a>
+        <input
+            type="text"
+            id="search-bar"
+            class="search-bar"
+            placeholder="Search"
+            oninput="filterNotifications()"
+        >
+        <div class="divider"></div>
+      </div>
+        <div class="notification-panel">
+            <div class="header"></div>
+            <div class="content">
+                <h2>Notifications  <button class="4-button active">4</button></h2>
+            </div>
+                <div class="filter">
+                    <button class="filter-btn active">Unread</button>
+                    <button class="filter-btn">All</button>
+                </div>
+            <div id="notification-list" class="notification-list">
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Inventory order placed</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Withdrawal status</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Gmail verification</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item unread">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Welcome message</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Profile updated</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <h3>Please verify your account</h3>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
