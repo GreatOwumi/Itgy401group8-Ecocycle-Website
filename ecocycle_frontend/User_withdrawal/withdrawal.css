@@ -29,8 +29,8 @@ body {
 }
 
 .sidebar .logo img {
-  width: 180px;
-  height: 120px;
+  width: 130px;
+  /* height: 120px; */
 }
 
 .sidebar ul {
@@ -66,7 +66,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   padding: 20px 30px 0px 300px;
   background-color: #f4f4f4;
   width: 100vw;

@@ -366,5 +366,32 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const button = item.querySelector("button");
+          const answer = item.querySelector(".answer");
+
+          // answer.style.transition =
+          //   "max-height 0.3s ease-out, opacity 0.3s ease-out";
+
+          button.addEventListener("click", () => {
+            const isVisible = answer.style.display === "block";
+            // Hide all other answers
+            faqItems.forEach((otherItem) => {
+              const otherAnswer = otherItem.querySelector(".answer");
+              if (otherAnswer !== answer) {
+                otherAnswer.style.display = "none";
+              }
+            });
+
+            // Toggle the current answer
+            answer.style.display = isVisible ? "none" : "block";
+          });
+        });
+      });
+    </script>
   </body>
 </html>

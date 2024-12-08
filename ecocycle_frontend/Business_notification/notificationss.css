@@ -1,0 +1,164 @@
+/* Global Styles */
+* body {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background: #ffffff;
+  height: 100%;
+}
+
+.sidebar img {
+  padding-top: 12px;
+  width: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background: #4b9a4b;
+  color: #fff;
+}
+
+/* Main Content Styles */
+.main-content a.active {
+  color: #2ecc71;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  /* width: 200px; */
+  padding: 20px 30px 0px 300px;
+}
+.content a.active {
+  color: #ffffff;
+  display: flexbox;
+}
+.notification-panel {
+  width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.filter-btn {
+  border: none;
+  background: #f1f1f1;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+}
+
+.filter-btn.active {
+  background: #2ecc71;
+  color: white;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.notification-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #2ecc71;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.content p {
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+.unread .icon {
+  box-shadow: 0 0 8px #2ecc71;
+}
