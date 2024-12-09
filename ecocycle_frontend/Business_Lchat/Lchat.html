@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecocycle Live Chat</title>
+  <link rel="stylesheet" href="Lchat.css">
+  
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Ecocycle</h2>
+      </div>
+      <div class="section">
+        <div class="section-title">GENERAL</div>
+        <nav>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Notifications</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="section-title">FINANCES</div>
+      <nav>
+        <ul>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </nav>
+      <div class="section-title">SUPPORT</div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Live chat</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="section-title">SETTINGS</div>
+      <nav>
+        <ul>
+          <li><a href="#">Business profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
 
+    <!-- Chat Section -->
+    <main class="chat-section">
+      <header class="chat-header">
+        <h3>Live chat support</h3>
+      </header>
+      <div class="chat-window">
+        <div class="watermark">Please note that conversations are monitored for developmental purposes</div>
+        <div class="message agent">
+          <img src="Agent.png" alt="Agent" class="chat-avatar">
+          <div class="chat-bubble">
+            <p><strong>Great Owunmi</strong></p>
+            <p>Ecocycle agent speaking, how may I help you?</p>
+          </div>
+        </div>
+        <div class="message client">
+          <img src="Client.png" alt="Client" class="chat-avatar">
+          <div class="chat-bubble">
+            <p><strong>Malta Limited</strong></p>
+            <p>We ordered for new materials but they haven't been delivered yet.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="chat-footer">
+        <div class="input-container">
+          <input type="text" id="chatInput" placeholder="Type your message..." />
+          <button id="sendButton">Send</button>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="Lchat.js"></script>
+</body>
+</html>
