@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bfaq.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="/ecocycle_frontend/images/ECO GREEN.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="#">Dashboard</a></li>
+            <li>
+              <a href="#">Inventory</a>
+            </li>
+            <li>
+              <a
+                href="/ecocycle_frontend/Business_notification/notificationss.html"
+                >Notifications</a
+              >
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="#">Analytics</a></li>
+
+            <li><span>SUPPORT</span></li>
+            <li>
+              <a href="/ecocycle_frontend/Business_Lchat/Lchat.html"
+                >Live chat</a
+              >
+            </li>
+            <li>
+              <a href="/ecocycle_frontend/Business_faq/bfaq.html" class="active"
+                >FAQ</a
+              >
+            </li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="/ecocycle_frontend/Business_profile/businessprofile.html"
+                >Business Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="main-content">
+        <!-- Title Section -->
+        <div class="title-section">
+          <h1>Questions? Look here.</h1>
+          <p>
+            Can't find an answer? Call us at <strong>+2347045020336</strong>
+          </p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-container">
+          <!-- Sidebar -->
+          <div class="sidebar-tbl">
+            <h3>Table of contents</h3>
+            <ul>
+              <li class="active">General</li>
+              <li>Security</li>
+              <li>Billing</li>
+              <li>Services</li>
+            </ul>
+          </div>
+
+          <!-- FAQ Content -->
+          <div class="faq-content">
+            <!-- FAQ Item -->
+            <div class="faq-item">
+              <h3>
+                What data does the app provide on recycling performance and
+                compliance?
+                <span>+</span>
+              </h3>
+              <p>
+                The app provides detailed reports on recycling activities,
+                compliance metrics, and progress tracking.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                Can the app integrate with my existing supply chain or
+                production software?
+                <span>+</span>
+              </h3>
+              <p>
+                Yes, the app supports integration with popular supply chain
+                tools via APIs.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                What kind of customer support is available for app users?
+                <span>-</span>
+              </h3>
+              <p>
+                Email Support: Contact our support team at ecosupport@gmail.com
+                for detailed assistance.<br />
+                Live Chat: Use the in-app chat feature for real-time help during
+                business hours.<br />
+                Help Center: Access our comprehensive knowledge base with
+                articles, guides, and tutorials.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                Can I upload my own data, such as production volumes or material
+                compositions?
+                <span>+</span>
+              </h3>
+              <p>
+                Yes, you can upload custom data through the dashboard for better
+                analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Toggle FAQ items
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          // Close all items
+          document.querySelectorAll(".faq-item").forEach((el) => {
+            if (el !== item) el.classList.remove("active");
+          });
+
+          // Toggle the clicked item
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

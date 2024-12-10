@@ -1,212 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f8f9fa;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Main Container */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    /* Title Section */
-    .title-section {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .title-section h1 {
-      font-size: 28px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .title-section p {
-      font-size: 16px;
-      color: #666;
-    }
-
-    .title-section p strong {
-      color: #27ae60;
-    }
-
-    /* FAQ Section */
-    .faq-container {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      background-color: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Left Sidebar */
-    .sidebar {
-      flex: 0 0 25%;
-      padding: 20px;
-      border-right: 1px solid #ddd;
-      background-color: #f8f9fa;
-    }
-
-    .sidebar h3 {
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .sidebar ul {
-      list-style: none;
-    }
-
-    .sidebar ul li {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 15px;
-      cursor: pointer;
-    }
-
-    .sidebar ul li.active {
-      color: #27ae60;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    /* FAQ Content */
-    .faq-content {
-      flex: 1;
-      padding: 20px 40px;
-    }
-
-    .faq-item {
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-
-    .faq-item h3 {
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-      margin-bottom: 10px;
-    }
-
-    .faq-item p {
-      font-size: 14px;
-      color: #666;
-      display: none;
-      padding: 10px 0;
-    }
-
-    .faq-item.active p {
-      display: block;
-    }
-
-    .faq-item h3 span {
-      color: #27ae60;
-      font-size: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Title Section -->
-    <div class="title-section">
-      <h1>Questions? Look here.</h1>
-      <p>Can't find an answer? Call us at <strong>+2347045020336</strong></p>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="faq-container">
+  <head>
+    <link rel="stylesheet" href="bfaq.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
+  </head>
+  <body>
+    <div class="container">
       <!-- Sidebar -->
-      <div class="sidebar">
-        <h3>Table of contents</h3>
-        <ul>
-          <li class="active">General</li>
-          <li>Security</li>
-          <li>Billing</li>
-          <li>Services</li>
-        </ul>
-      </div>
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="/ecocycle_frontend/images/ECO GREEN.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><span>GENERAL</span></li>
+            <li><a href="#">Dashboard</a></li>
+            <li>
+              <a href="#">Inventory</a>
+            </li>
+            <li>
+              <a
+                href="/ecocycle_frontend/Business_notification/notificationss.html"
+                >Notifications</a
+              >
+            </li>
+            <li><span>FINANCES</span></li>
+            <li><a href="#">Analytics</a></li>
 
-      <!-- FAQ Content -->
-      <div class="faq-content">
-        <!-- FAQ Item -->
-        <div class="faq-item">
-          <h3>
-            What data does the app provide on recycling performance and compliance?
-            <span>+</span>
-          </h3>
-          <p>The app provides detailed reports on recycling activities, compliance metrics, and progress tracking.</p>
-        </div>
-        <div class="faq-item">
-          <h3>
-            Can the app integrate with my existing supply chain or production software?
-            <span>+</span>
-          </h3>
-          <p>Yes, the app supports integration with popular supply chain tools via APIs.</p>
-        </div>
-        <div class="faq-item">
-          <h3>
-            What kind of customer support is available for app users?
-            <span>-</span>
-          </h3>
+            <li><span>SUPPORT</span></li>
+            <li>
+              <a href="/ecocycle_frontend/Business_Lchat/Lchat.html"
+                >Live chat</a
+              >
+            </li>
+            <li>
+              <a href="/ecocycle_frontend/Business_faq/bfaq.html" class="active"
+                >FAQ</a
+              >
+            </li>
+            <li><span>SETTINGS</span></li>
+            <li>
+              <a href="/ecocycle_frontend/Business_profile/businessprofile.html"
+                >Business Profile</a
+              >
+            </li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="main-content">
+        <!-- Title Section -->
+        <div class="title-section">
+          <h1>Questions? Look here.</h1>
           <p>
-            Email Support: Contact our support team at ecosupport@gmail.com for detailed assistance.<br>
-            Live Chat: Use the in-app chat feature for real-time help during business hours.<br>
-            Help Center: Access our comprehensive knowledge base with articles, guides, and tutorials.
+            Can't find an answer? Call us at <strong>+2347045020336</strong>
           </p>
         </div>
-        <div class="faq-item">
-          <h3>
-            Can I upload my own data, such as production volumes or material compositions?
-            <span>+</span>
-          </h3>
-          <p>Yes, you can upload custom data through the dashboard for better analytics.</p>
+
+        <!-- FAQ Section -->
+        <div class="faq-container">
+          <!-- Sidebar -->
+          <div class="sidebar-tbl">
+            <h3>Table of contents</h3>
+            <ul>
+              <li class="active">General</li>
+              <li>Security</li>
+              <li>Billing</li>
+              <li>Services</li>
+            </ul>
+          </div>
+
+          <!-- FAQ Content -->
+          <div class="faq-content">
+            <!-- FAQ Item -->
+            <div class="faq-item">
+              <h3>
+                What data does the app provide on recycling performance and
+                compliance?
+                <span>+</span>
+              </h3>
+              <p>
+                The app provides detailed reports on recycling activities,
+                compliance metrics, and progress tracking.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                Can the app integrate with my existing supply chain or
+                production software?
+                <span>+</span>
+              </h3>
+              <p>
+                Yes, the app supports integration with popular supply chain
+                tools via APIs.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                What kind of customer support is available for app users?
+                <span>-</span>
+              </h3>
+              <p>
+                Email Support: Contact our support team at ecosupport@gmail.com
+                for detailed assistance.<br />
+                Live Chat: Use the in-app chat feature for real-time help during
+                business hours.<br />
+                Help Center: Access our comprehensive knowledge base with
+                articles, guides, and tutorials.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>
+                Can I upload my own data, such as production volumes or material
+                compositions?
+                <span>+</span>
+              </h3>
+              <p>
+                Yes, you can upload custom data through the dashboard for better
+                analytics.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <script>
+      // Toggle FAQ items
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          // Close all items
+          document.querySelectorAll(".faq-item").forEach((el) => {
+            if (el !== item) el.classList.remove("active");
+          });
 
-  <script>
-    // Toggle FAQ items
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.addEventListener('click', () => {
-        // Close all items
-        document.querySelectorAll('.faq-item').forEach(el => {
-          if (el !== item) el.classList.remove('active');
+          // Toggle the clicked item
+          item.classList.toggle("active");
         });
-
-        // Toggle the clicked item
-        item.classList.toggle('active');
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
